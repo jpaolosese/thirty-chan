@@ -2,12 +2,34 @@
 <html>
 <head>
   <title>Workspace</title>
+  
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo center">30chan</a>
+      </div>
+      <div class="nav-wrapper">
+        <ul id="nav-mobile">
+          <li>Random </li>
+          <li>Music </li>
+          <li>Programming </li>
+          <li>Drinks</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
 <%= yield %>
 
 </body>

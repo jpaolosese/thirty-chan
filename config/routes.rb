@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+  
+  get '/boards/:board_id' => 'boards#show', as: 'board'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
