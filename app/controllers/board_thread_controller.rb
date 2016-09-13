@@ -1,10 +1,9 @@
 class BoardThreadController < ApplicationController
   
-  # users will only be able to :index, :show, :new, :create
+  # users will only be able to :show, :new, :create
   
   def index
-    @board = Board.find_by_id(params[:board_id])
-    @thread = BoardThread.all
+    @threads = BoardThread.all
   end
   
   def show
@@ -19,7 +18,7 @@ class BoardThreadController < ApplicationController
   
   def create
     @board = Board.find_by_id(params[:board_id])
-    @thread = BoardThread.new(thread_params)
+    @thread = BoardThread.create(thread_params)
   end
   
   def edit

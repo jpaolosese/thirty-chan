@@ -15,7 +15,7 @@ class BoardsController < ApplicationController
   end
   
   def create
-    @board = Board.new(board_params)
+    @board = Board.create(board_params)
   end
   
   def edit
