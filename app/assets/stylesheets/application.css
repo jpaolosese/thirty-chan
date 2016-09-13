@@ -25,7 +25,10 @@
   padding-top: 40px;
 }
 
-
 #nav-mobile {
   text-align: center;
+}
+
+.board-show {
+  padding-top: 5%;
 }
